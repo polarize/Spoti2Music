@@ -11,6 +11,12 @@
 		C21F9B5B1D12A00100E310CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F9B5A1D12A00100E310CA /* ViewController.swift */; };
 		C21F9B5D1D12A00100E310CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C21F9B5C1D12A00100E310CA /* Assets.xcassets */; };
 		C21F9B601D12A00100E310CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21F9B5E1D12A00100E310CA /* Main.storyboard */; };
+		C21F9B6F1D12A0AE00E310CA /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F9B6A1D12A0AE00E310CA /* CSV.swift */; };
+		C21F9B701D12A0AE00E310CA /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F9B6B1D12A0AE00E310CA /* Description.swift */; };
+		C21F9B711D12A0AE00E310CA /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F9B6C1D12A0AE00E310CA /* Parser.swift */; };
+		C21F9B721D12A0AE00E310CA /* ParserHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F9B6D1D12A0AE00E310CA /* ParserHelpers.swift */; };
+		C21F9B731D12A0AE00E310CA /* String+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F9B6E1D12A0AE00E310CA /* String+Lines.swift */; };
+		C21F9B751D12A0DA00E310CA /* electronic_top_20.csv in Resources */ = {isa = PBXBuildFile; fileRef = C21F9B741D12A0DA00E310CA /* electronic_top_20.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		C21F9B5C1D12A00100E310CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C21F9B5F1D12A00100E310CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C21F9B611D12A00100E310CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C21F9B6A1D12A0AE00E310CA /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		C21F9B6B1D12A0AE00E310CA /* Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		C21F9B6C1D12A0AE00E310CA /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		C21F9B6D1D12A0AE00E310CA /* ParserHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserHelpers.swift; sourceTree = "<group>"; };
+		C21F9B6E1D12A0AE00E310CA /* String+Lines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Lines.swift"; sourceTree = "<group>"; };
+		C21F9B741D12A0DA00E310CA /* electronic_top_20.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = electronic_top_20.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,8 @@
 		C21F9B571D12A00100E310CA /* Spoti2Music */ = {
 			isa = PBXGroup;
 			children = (
+				C21F9B741D12A0DA00E310CA /* electronic_top_20.csv */,
+				C21F9B691D12A0AE00E310CA /* SwiftCSV */,
 				C21F9B581D12A00100E310CA /* AppDelegate.swift */,
 				C21F9B5A1D12A00100E310CA /* ViewController.swift */,
 				C21F9B5C1D12A00100E310CA /* Assets.xcassets */,
@@ -59,6 +73,18 @@
 				C21F9B611D12A00100E310CA /* Info.plist */,
 			);
 			path = Spoti2Music;
+			sourceTree = "<group>";
+		};
+		C21F9B691D12A0AE00E310CA /* SwiftCSV */ = {
+			isa = PBXGroup;
+			children = (
+				C21F9B6A1D12A0AE00E310CA /* CSV.swift */,
+				C21F9B6B1D12A0AE00E310CA /* Description.swift */,
+				C21F9B6C1D12A0AE00E310CA /* Parser.swift */,
+				C21F9B6D1D12A0AE00E310CA /* ParserHelpers.swift */,
+				C21F9B6E1D12A0AE00E310CA /* String+Lines.swift */,
+			);
+			path = SwiftCSV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C21F9B751D12A0DA00E310CA /* electronic_top_20.csv in Resources */,
 				C21F9B5D1D12A00100E310CA /* Assets.xcassets in Resources */,
 				C21F9B601D12A00100E310CA /* Main.storyboard in Resources */,
 			);
@@ -131,8 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C21F9B721D12A0AE00E310CA /* ParserHelpers.swift in Sources */,
+				C21F9B701D12A0AE00E310CA /* Description.swift in Sources */,
 				C21F9B5B1D12A00100E310CA /* ViewController.swift in Sources */,
+				C21F9B711D12A0AE00E310CA /* Parser.swift in Sources */,
 				C21F9B591D12A00100E310CA /* AppDelegate.swift in Sources */,
+				C21F9B6F1D12A0AE00E310CA /* CSV.swift in Sources */,
+				C21F9B731D12A0AE00E310CA /* String+Lines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
